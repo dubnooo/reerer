@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElOria - Top Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <button class="menu-btn" id="menu-btn">
+                <span class="burger">&#9776;</span>
+            </button>
+            
+            <nav class="header-nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Каталог ▼</a>
+                        <ul class="dropdown-content">
+                            <li><a href="https://dubnooo.github.io/Jeans-Collection/">Jeans</a></li>
+                            <li><a href="https://dubnooo.github.io/Hoodie/">Hoodie</a></li>
+                            <li><a href="https://dubnooo.github.io/Jackets/">Jackets</a></li>
+                            <li><a href="https://dubnooo.github.io/T-shirt/">T-shirt</a></li>
+                            <li><a href="https://dubnooo.github.io/handbag-/">Handbag</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <h1 class="logo">ElOria</h1>
+        
+        <div class="right">
+            <div class="header-right2">
+                <a href="#" class="icon-link"><span class="heart">&hearts;</span></a>
+            </div>
+            <div class="header-right">
+                <a href="#" class="icon-link" id="search-trigger"><span class="heart">🔍️</span></a>
+            </div>
+        </div> 
+    </header>
+
+    <main>
+        <p class="intro-text">
+            Завжди приємно придбати стильні моделі за зниженою ціною. Eloria готовий надати тобі таку круту можливість — тож вибирай найкращі речі на розпродажі! У розділі знижок на тебе чекають **сукні, костюми, верхній одяг, спідниці, брюки, блузи, сорочки** та багато інших стильних позицій.
+        </p>
+
+        <section class="image-gallery">
+            <div class="image-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDG9_UbiAYnEnOK4pbZqKhfQ-WMsjs1sFN5VfX96rbQx41dJRCZ3zCjcaOMB0056SObaY&usqp=CAU" alt="Top Style Badge" class="top-style-logo">
+            </div>
+        </section>
+    </main>
+
+    <div id="search-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="game-box">
+                <p class="error-msg">⚠️ Немає з'єднання... Грайте!</p>
+                <canvas id="dinoCanvas" width="600" height="150"></canvas>
+                <p class="game-tip">Натискай <b>ПРОБІЛ</b>, щоб стрибати</p>
+            </div>
+        </div>
+    </div>
+
+    <nav id="sidebar-menu" class="hidden">
+        <ul>
+            <li><a href="#">Сукні</a></li>
+            <li><a href="#">Костюми</a></li>
+            <li><a href="#">Верхній одяг</a></li>
+            <li><a href="#">Розпродаж</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p>Телефонуйте за номером</p>
+        <p>095 396 9197</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
