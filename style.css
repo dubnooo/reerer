@@ -1,0 +1,52 @@
+/* Базовий дизайн */
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ВИРІВНЮВАННЯ ІКОНОК (Серце і Пошук) */
+.right {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Відстань між сердечком і пошуком */
+}
+
+.icon-link { text-decoration: none; color: black; font-size: 24px; display: flex; align-items: center; }
+
+.logo { font-size: 24px; font-weight: bold; text-transform: uppercase; margin: 0; }
+
+.header-nav ul { list-style: none; padding: 0; }
+.dropdown { position: relative; display: inline-block; }
+.dropdown-content {
+    display: none; position: absolute; background: white;
+    min-width: 150px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); z-index: 10;
+}
+.dropdown:hover .dropdown-content { display: block; }
+.dropdown-content li a { padding: 10px; display: block; text-decoration: none; color: black; text-align: left; }
+
+.menu-btn { background: none; border: none; font-size: 26px; cursor: pointer; }
+
+/* СТИЛІ ГРИ */
+.modal {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8); display: flex; justify-content: center; align-items: center; z-index: 1000;
+}
+.modal-content { background: white; padding: 25px; border-radius: 12px; position: relative; }
+.close-btn { position: absolute; right: 10px; top: 0; font-size: 30px; cursor: pointer; }
+#dinoCanvas { background: #f8f8f8; border-bottom: 2px solid #333; display: block; margin: 10px auto; }
+.error-msg { color: #d9534f; font-weight: bold; margin-bottom: 5px; }
+
+/* Бічне меню */
+#sidebar-menu {
+    position: fixed; top: 0; left: 0; width: 250px; height: 100%;
+    background: white; box-shadow: 2px 0 10px rgba(0,0,0,0.2); z-index: 1100; padding: 20px; text-align: left;
+}
+.hidden { display: none !important; }
+
+.intro-text { padding: 30px 10%; line-height: 1.6; }
+footer { background: #f8f8f8; padding: 20px; margin-top: 30px; }
